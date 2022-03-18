@@ -1,0 +1,16 @@
+import os
+
+# setting the environment variables
+os.environ["sheety_auth_username"] = "AuthorizedUser"
+os.environ["sheety_auth_password"] = "100daysofcode"
+os.environ["nutritionix_app_id"] = '5bf0bfcf'
+os.environ["nutritionix_api_key"] = '31be71fa2c4599c8d0f084617b460d02'
+os.environ["sheety_endpoint"] = 'https://api.sheety.co/53c6c2817da2758e9b1b2f8ba23bf6e2/copyOfMyWorkouts/workouts'
+
+
+# retrieving the environment variables and assigning them to variables to be used
+username = os.environ.get("sheety_auth_username")
+password = os.environ.get("sheety_auth_password")
+app_id = os.environ.get("nutritionix_app_id")
+api_key = os.environ.get("nutritionix_api_key")
+endpoint = os.environ.get("sheety_endpoint")
